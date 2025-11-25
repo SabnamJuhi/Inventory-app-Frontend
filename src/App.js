@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import InvoicePage from './pages/InvoicePage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-vh-100">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div className="container">
+          <a className="navbar-brand" href="/">Inventory / Invoices</a>
+        </div>
+      </nav>
+
+      <main className="py-4">
+        <div className="container container-xl">
+          <InvoicePage />
+        </div>
+      </main>
     </div>
   );
 }
